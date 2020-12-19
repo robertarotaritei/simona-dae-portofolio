@@ -3,9 +3,18 @@ import React from 'react';
 class SideBar extends React.Component {
 
     renderHomeButtons = () => {
-        return <div>
-            <button>
+        return <div class="sidenav">
+            <button class="sideHomeButton">
                 Home
+            </button>
+            <button class="sideLorem1Button">
+                lorem
+            </button>
+            <button class="sideLorem2Button">
+                lorem
+            </button>
+            <button class="sideLorem3Button">
+                lorem
             </button>
         </div>;
     }

@@ -6,7 +6,9 @@ class NavigationBar extends React.Component {
         return (
             <div className="topnav">
                 <div style={{ float: 'left', paddingLeft: '5rem' }}>
-                    <p>
+                
+                    <p class="name">
+                    <i class="fas fa-paint-brush"></i>
                         Simona Aroboaiei
                     </p>
                 </div>

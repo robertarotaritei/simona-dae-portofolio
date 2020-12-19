@@ -1,11 +1,23 @@
 .App {
   text-align: center;
+  
 }
+
+/* topNav */
 
 .topnav {
   overflow: hidden;
-  background-color: gray;
+  background-image: linear-gradient(135deg, #f8efe5 0%, #e2d1c3 100%);
 }
+
+.topnav .name{
+  color: black;
+  font-weight: bolder;
+  
+}
+
+
+/* sideNav */
 
 .sidenav {
   height: 100%;
@@ -14,7 +26,87 @@
   z-index: -1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-image: linear-gradient(45deg, #ee9ca7 0%, #ffdde1 100%);
   overflow-x: hidden;
   padding-top: 5rem;
+}
+
+.sideHomeButton{
+  width: 100px;
+  height: 50px;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  font-size: large;
+  background-color: rgb(211, 219, 163);
+  border: none;
+  border-radius: 0.6rem;
+  display: block;
+}
+
+.sideHomeButton:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(180, 105, 20);
+  cursor: pointer;
+  transform: scale(1.03, 1.03);
+  transition: 0.3s;
+}
+
+.sideLorem1Button{
+  width: 100px;
+  height: 50px;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  font-size: large;
+  background-color: rgb(211, 219, 163);
+  border: none;
+  border-radius: 0.6rem;
+  display: block;
+}
+
+.sideLorem1Button:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(180, 105, 20);
+  cursor: pointer;
+  transform: scale(1.03, 1.03);
+  transition: 0.3s;
+}
+
+.sideLorem2Button{
+  width: 100px;
+  height: 50px;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  font-size: large;
+  background-color: rgb(211, 219, 163);
+  border: none;
+  border-radius: 0.6rem;
+  display: block;
+}
+
+.sideLorem2Button:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(180, 105, 20);
+  cursor: pointer;
+  transform: scale(1.03, 1.03);
+  transition: 0.3s;
+}
+
+.sideLorem3Button{
+  width: 100px;
+  height: 50px;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  font-size: large;
+  background-color: rgb(211, 219, 163);
+  border: none;
+  border-radius: 0.6rem;
+  display: block;
+}
+
+.sideLorem3Button:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgb(180, 105, 20);
+  cursor: pointer;
+  transform: scale(1.03, 1.03);
+  transition: 0.3s;
 }
