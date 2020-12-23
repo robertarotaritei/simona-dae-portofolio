@@ -6,32 +6,44 @@ import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
-  constructor(){
+  constructor() {
     super();
 
-    this.state={
-      content: 'home'
+    this.state = {
+      content: 'home',
+      theme: localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
     }
   }
-  
+
   selectHome = () => {
-    this.setState({content: 'home'});
+    this.setState({ content: 'home' });
   }
 
   selectProjects = () => {
-    this.setState({content: 'projects'});
+    this.setState({ content: 'projects' });
   }
 
   selectAbout = () => {
-    this.setState({content: 'about'});
+    this.setState({ content: 'about' });
+  }
+
+  changeTheme = () => {
+    if (this.state.theme === 'light') {
+      this.setState({ theme: 'dark' });
+      localStorage.setItem('theme', 'dark');
+    }
+    else{
+      this.setState({ theme: 'light' });
+      localStorage.setItem('theme', 'light');
+    }
   }
 
   render() {
     return (
       <div className="App">
-        <NavigationBar selectHome={this.selectHome} selectProjects={this.selectProjects} selectAbout={this.selectAbout}/>
-        <SideBar content={this.state.content}/>
-        <Main content={this.state.content}/>
+        <NavigationBar selectHome={this.selectHome} selectProjects={this.selectProjects} selectAbout={this.selectAbout} theme={this.state.theme} />
+        <SideBar content={this.state.content} changeTheme={this.changeTheme} theme={this.state.theme} />
+        <Main content={this.state.content} theme={this.state.theme} />
         <Footer />
       </div>
     );
