@@ -4,7 +4,7 @@ class NavigationBar extends React.Component {
 
     render() {
         return (
-            <div className="topnav">
+            <div className={this.props.getTheme('topnav', this.props.theme)}>
                 <div style={{ float: 'left', paddingLeft: '5rem' }}>
                 
                     <p class="name">

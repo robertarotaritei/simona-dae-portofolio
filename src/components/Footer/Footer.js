@@ -4,7 +4,7 @@ class Footer extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className={this.props.getTheme('footer', this.props.theme)}>
                 <p>Copyright</p>
             </div>
         );
