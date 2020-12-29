@@ -50,7 +50,7 @@ class SideBar extends React.Component {
 
     render() {
         return (
-            <nav className="navbar">
+            <nav className={this.props.getTheme('navbar', this.props.theme)}>
                 <ul className="navbar-nav">
                     <li className="logo">
                         <button className="nav-link">

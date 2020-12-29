@@ -30,7 +30,7 @@ class Main extends React.Component {
     }
     render() {
         return (
-            <div style={{ paddingTop: '1rem' }}>
+            <div className={this.props.getTheme('main', this.props.theme)} style={{ paddingTop: '1rem' }}>
                 {this.renderContent()}
             </div>
         );

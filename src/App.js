@@ -38,13 +38,17 @@ class App extends React.Component {
     }
   }
 
+  getTheme(arg, color) {
+    return arg + ' ' + color;
+  }
+
   render() {
     return (
       <div className="App">
-        <NavigationBar selectHome={this.selectHome} selectProjects={this.selectProjects} selectAbout={this.selectAbout} theme={this.state.theme} />
-        <SideBar content={this.state.content} changeTheme={this.changeTheme} theme={this.state.theme} />
-        <Main content={this.state.content} theme={this.state.theme} />
-        <Footer />
+        <NavigationBar selectHome={this.selectHome} selectProjects={this.selectProjects} selectAbout={this.selectAbout} theme={this.state.theme} getTheme={this.getTheme}/>
+        <SideBar content={this.state.content} changeTheme={this.changeTheme} theme={this.state.theme} getTheme={this.getTheme}/>
+        <Main content={this.state.content} theme={this.state.theme} getTheme={this.getTheme}/>
+        <Footer theme={this.state.theme} getTheme={this.getTheme}/>
       </div>
     );
   }
